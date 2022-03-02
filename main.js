@@ -1,24 +1,24 @@
 let str = `<h4>Esperienze</h4>
 <h5>Elettricista</h5>
-<p>Dal 30/05/16 al 19/06/16 presso Elettrocentro di jesi AN (stage)</p>
+<p>Dal 30/05/16 al 19/06/16 presso Elettrocentro di jesi AN (stage)</p><br>
+<h5>Operaio</h5>
+<p>Dal 06/2019 al 08/2019 Operaio, uso di macchina da cucire lineare (fodere braccia/tasche interne),
+CONFEZIONI SOBIA filottano (AN)</p><br>
+<h5>Addetto vendite</h5>
+<p>Dal 20/07/2021 al 30/09/2021 Commesso presso boutique di abbigliamento DREAM SARL Francia.</p>
 <h4>Istruzione e formazione</h4>
 <p>Diploma di maturità perito tecnico elettronico/elettrotecnico  presso ITIS G. MARCONI (jesi AN)</p>
 <h4>lingue</h4>
 <ul>
   <li>Italiano (madrelingua)</li>
   <li>Inglese (buono)</li>
+  <li>Francese (base)</li>
 </ul>
 <h4>Competenze</h4>
 <ul>
   <li>Cablaggio di impianti civile.</li>
   <li>Lettura schemi elettrici</li>
-  <li>Discrete capacità di programmazione in: C , JAVASCRIPT, HTML/CSS e PYTHON.</li>
-  <li>Conoscenza pacchetto Microsoft office.</li>
-</ul>
-<h4>Attualmente</h4>
-<ul>
-  <li>iscritto presso UNIVPM ingegneria elettronica</li>
-  <li>Iscritto su start2impact.it corso JUNIOR FULL STACK DEVELOPER </li>
+  <li>Discrete capacità di programmazione in: C , JAVASCRIPT, HTML/CSS.</li>
 </ul>`;
 
 
@@ -52,7 +52,7 @@ function type(){
     top:   document.getElementById("ctn").getBoundingClientRect().height,
     behavior: 'smooth'
   });
-  setTimeout(type, 50);
+  setTimeout(type, 5);
 }
 
 //end function declaration
@@ -101,11 +101,11 @@ btn3.addEventListener("click", function(){
 
 // Close the dropdown menu
 window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-  var dropdowns = document.getElementsByClassName("dropdown-content");
-  var i;
+if (!event.target.matches('.dropdown-content')) {
+  let dropdowns = document.getElementsByClassName("");
+  let i;
   for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
+    let openDropdown = dropdowns[i];
     if (openDropdown.classList.contains('show')) {
       openDropdown.classList.remove('show');
       }
